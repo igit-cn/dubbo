@@ -79,6 +79,17 @@ public class MetadataReportConfig extends AbstractConfig {
      */
     private Boolean cluster;
 
+    /**
+     * registry id
+     */
+    private String registry;
+
+    /**
+     * File for saving metadata center dynamic list
+     */
+    private String file;
+
+
     public MetadataReportConfig() {
     }
 
@@ -210,5 +221,21 @@ public class MetadataReportConfig extends AbstractConfig {
 
     public void setCluster(Boolean cluster) {
         this.cluster = cluster;
+    }
+
+    public String getRegistry() {
+        return registry;
+    }
+
+    public void setRegistry(String registry) {
+        this.registry = registry;
+    }
+
+    public String getFile() {
+        return file;
+    }
+
+    public void setFile(String file) {
+        this.file = file;
     }
 }
